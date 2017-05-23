@@ -12,7 +12,7 @@ import java.util.Optional;
  */
 public interface UserAppRepository extends CrudRepository<UserApp,String>{
 
-    Optional<UserApp> findByAppIdAndUserId(String appId,Long userId);
+    Optional<UserApp> findByAppIdAndUserId(String appId,String userId);
 
     Optional<List<UserApp>> findByAppId(String appId);
 
