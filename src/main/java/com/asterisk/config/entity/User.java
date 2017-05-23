@@ -21,6 +21,8 @@ public class User {
     @PrimaryKey
     private UUID id;
 
+    private String userId;
+
     private String username;
 
     private String password;

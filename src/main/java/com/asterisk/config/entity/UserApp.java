@@ -20,7 +20,7 @@ public class UserApp {
     @PrimaryKey
     private UUID id;
 
-    private Long userId;
+    private String userId;
 
     private String username;
 

@@ -4,6 +4,7 @@ import lombok.*;
 import org.springframework.data.cassandra.mapping.PrimaryKey;
 
 import java.util.Date;
+import java.util.Map;
 import java.util.UUID;
 
 /**
@@ -28,6 +29,8 @@ public class App {
     private String description;
 
     private Date createTime;
+
+    private Map<String,String> configurations;
 
 
 
