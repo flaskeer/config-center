@@ -4,6 +4,11 @@ spring:
       contact-points: localhost
       port: 9042
       keyspace-name: mykeyspace
+  freemarker:
+    cache: false
+    charset: UTF-8
+    content-type: text/html
+    expose-request-attributes: true
 management:
   security:
     enabled: false

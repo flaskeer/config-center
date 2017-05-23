@@ -1,4 +1,4 @@
-package com.asterisk.config.dao;
+package com.asterisk.config.entity;
 
 import lombok.*;
 import org.springframework.data.cassandra.mapping.PrimaryKey;
@@ -16,13 +16,17 @@ import java.util.UUID;
 @Getter
 @Setter
 @ToString
-public class Customer {
+public class User {
 
     @PrimaryKey
     private UUID id;
 
-    private String firstName;
+    private String username;
 
-    private String lastName;
+    private String password;
+
+    private String Role;
+
+
 
 }
